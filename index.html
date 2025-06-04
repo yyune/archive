@@ -7,24 +7,32 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="container">
-    <!-- Sidebar -->
-    <nav class="sidebar">
-      <h1 class="site-title">🗂 Archive</h1>
-      <p class="subtitle">Thoughts on manhwa, webtoons, and novels</p>
+  <div class="wrapper">
+    <header>
+      <h1>Archive</h1>
+      <p class="subtitle">A place where my thoughts on manhwa, webtoon, and novels are stored.</p>
+    </header>
 
-      <button id="theme-toggle">🌙 Toggle Theme</button>
-
+    <nav class="navbar">
       <input id="search" type="text" placeholder="Search posts..." />
+      <button id="theme-toggle">🌙 Toggle Theme</button>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </nav>
 
-    <!-- Main content -->
-    <main id="posts" class="content">
-      <!-- JS will inject posts here -->
+    <main>
+      <section id="post-list">
+        <h2>Recent Posts</h2>
+        <div id="posts"></div>
+      </section>
     </main>
+
+    <footer>
+      <p>&copy; 2025 Kathy's Archive. All rights reserved.</p>
+    </footer>
   </div>
 
   <script src="js/main.js"></script>
 </body>
-
 </html>
