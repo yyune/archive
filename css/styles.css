@@ -1,0 +1,162 @@
+/* Base Reset and Layout */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #fefefe, #f0f4ff);
+  color: #333;
+}
+
+.wrapper {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 30px 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  color: #374785;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+header .subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 10px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  background-color: #374785;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navbar a:hover {
+  color: #ffda79;
+}
+
+/* Main */
+#post-list h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+#posts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post {
+  padding: 15px 20px;
+  background: #f9f9ff;
+  border-left: 4px solid #374785;
+  border-radius: 6px;
+  transition: transform 0.15s, background 0.15s;
+}
+
+.post:hover {
+  background: #eef0ff;
+  transform: scale(1.01);
+}
+
+.post h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.post h3 a {
+  color: #374785;
+  text-decoration: none;
+}
+
+.post h3 a:hover {
+  text-decoration: underline;
+}
+
+.post-date {
+  font-size: 0.85rem;
+  color: #999;
+  margin-top: 4px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #888;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+/* Light/Dark Theme Toggle */
+#theme-toggle {
+  float: right;
+  margin-top: -40px;
+  margin-right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+body.dark {
+  background: #121212;
+  color: #eaeaea;
+}
+
+body.dark .wrapper {
+  background: #1e1e1e;
+}
+
+body.dark .navbar {
+  background-color: #2a2a2a;
+}
+
+body.dark .post {
+  background: #2a2a2a;
+  border-left-color: #888;
+}
+
+body.dark .post a {
+  color: #c5e1ff;
+}
+
+body.dark footer {
+  color: #aaa;
+  border-color: #333;
+}
+
+.post {
+  transition: box-shadow 0.3s ease;
+}
+.post:hover {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
